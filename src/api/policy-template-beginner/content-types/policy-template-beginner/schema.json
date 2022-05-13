@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "policy_template_beginners",
+  "info": {
+    "singularName": "policy-template-beginner",
+    "pluralName": "policy-template-beginners",
+    "displayName": "Policy Template Beginner",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "type1": {
+      "type": "enumeration",
+      "enum": [
+        "E",
+        "S",
+        "G"
+      ]
+    },
+    "type2": {
+      "type": "enumeration",
+      "enum": [
+        "North America",
+        "South America",
+        "United Kingdom",
+        "Europe",
+        "Asia",
+        "ANZ"
+      ]
+    },
+    "media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Type3": {
+      "type": "string"
+    }
+  }
+}

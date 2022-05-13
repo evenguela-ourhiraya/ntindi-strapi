@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "thumbnails",
+  "info": {
+    "singularName": "thumbnail",
+    "pluralName": "thumbnails",
+    "displayName": "Thumbnail",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "EGS": {
+      "type": "enumeration",
+      "enum": [
+        "Environment",
+        "Global",
+        "Social"
+      ]
+    },
+    "Region": {
+      "type": "string"
+    },
+    "Inudsutry": {
+      "type": "string"
+    }
+  }
+}

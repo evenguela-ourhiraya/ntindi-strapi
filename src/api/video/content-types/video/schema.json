@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "videos",
+  "info": {
+    "singularName": "video",
+    "pluralName": "videos",
+    "displayName": "Video"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "type1": {
+      "type": "enumeration",
+      "enum": [
+        "E",
+        "S",
+        "G"
+      ],
+      "required": true
+    },
+    "type2": {
+      "type": "enumeration",
+      "enum": [
+        "North America",
+        "South America",
+        "United Kingdom",
+        "Europe",
+        "Asia",
+        "ANZ"
+      ],
+      "required": true
+    },
+    "media": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}
